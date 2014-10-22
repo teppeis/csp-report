@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    li
+      a(href="?unsafeInline=1")= "With 'unsafe-inline'"
+    li
+      a(href="?")= "Without 'unsafe-inline'"
+  pre= cspHeader
+  script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+  script(nonce=nonce)
+    | $("body").append("<p>This should work with a valid nonce!</p>");
+  script
+    | $("body").append("<p>This should not work because nonce is <strong>missing</strong>.</p>");
+  script(nonce="bad")
+    | $("body").append("<p>This should not work because nonce is <strong>invalid</strong>.</p>");
