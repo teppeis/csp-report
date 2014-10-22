@@ -14,6 +14,8 @@ ex): `Content-Security-Policy: script-src 'self'; report-uri http://localhost:30
 Open `http://localhost:3001` (CSP Reporter) in your browser.  
 When CSP violation is reported, it is dynamically displayed with websocket.
 
+![screen](./misc/screen.png)
+
 ## Demo
 
 `http://localhost:3001/csp-demo` is a CSP violation demo page.
