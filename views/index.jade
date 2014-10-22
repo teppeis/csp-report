@@ -1,0 +1,9 @@
+extends layout
+
+block head
+  script(src='/socket.io/socket.io.js')
+  script(src='/javascripts/index.js')
+
+block content
+  h1= title
+  div(id="container")
