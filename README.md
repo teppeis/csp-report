@@ -16,7 +16,7 @@ When CSP violation is reported, it is dynamically displayed with websocket.
 
 ![screen](./misc/screen.png)
 
-## Demo
+## Violation Demo
 
 `http://localhost:3001/csp-demo` is a CSP violation demo page.
 If you open it in a CSP-supported browser, it reports a violation to the CSP Reporter.
