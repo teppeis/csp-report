@@ -17,7 +17,7 @@ router.get('/csp-demo', function(req, res) {
   }
   res.header(cspHeaderName, cspHeaderValue);
   var cspHeader = cspHeaderName + ': ' + cspHeaderValue;
-  res.render('csp-demo', {title: 'CSP Report', nonce: nonce, cspHeader: cspHeader});
+  res.render('csp-demo', {title: 'CSP Violation Demo', nonce: nonce, cspHeader: cspHeader});
 });
 
 module.exports = router;
