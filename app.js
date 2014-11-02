@@ -28,7 +28,7 @@ var router = express.Router();
 router.post('/report', function(req, res) {
   console.log('headers', req.headers);
   console.log('body', req.body);
-  res.send('');
+  res.sendStatus(200);
 
   io.emit('report', req.body);
 });

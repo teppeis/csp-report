@@ -11,9 +11,9 @@ router.get('/csp-demo', function(req, res) {
   var cspHeaderName = 'Content-Security-Policy';
   console.log(req.query);
   if (req.query.unsafeInline) {
-    cspHeaderValue = "script-src 'self' 'nonce-" + nonce + "' 'unsafe-inline' http://ajax.googleapis.com; report-uri /report";
+    cspHeaderValue = "script-src 'self' 'nonce-" + nonce + "' 'unsafe-inline' ajax.googleapis.com; report-uri /report";
   } else {
-    cspHeaderValue = "script-src 'self' 'nonce-" + nonce + "' http://ajax.googleapis.com; report-uri /report";
+    cspHeaderValue = "script-src 'self' 'nonce-" + nonce + "' ajax.googleapis.com; report-uri /report";
   }
   res.header(cspHeaderName, cspHeaderValue);
   var cspHeader = cspHeaderName + ': ' + cspHeaderValue;
