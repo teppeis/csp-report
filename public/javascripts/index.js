@@ -1,4 +1,4 @@
-var socket = io('http://india.dev.cybozu.co.jp/');
+var socket = io('/');
 socket.on('report', function (data) {
     console.log(data);
     var str = JSON.stringify(data['csp-report']);
