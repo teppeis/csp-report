@@ -1,6 +1,8 @@
 csp-report
 ====
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/teppeis/csp-report.svg)](https://greenkeeper.io/)
+
 ## Usage
 
 ```bash
